@@ -56,7 +56,7 @@ This project is a simple URL shortener built in Go. It allows users to shorten l
 curl -X POST http://localhost:8080/shorten \
 -H "Content-Type: application/json" \
 -d '{"url":"https://www.example.com"}'
-
+```
 
 #### 2. Redirect to Original URL
 - **Endpoint**: `/r/{short_url}
@@ -66,6 +66,7 @@ curl -X POST http://localhost:8080/shorten \
 #### Example:
 ```bash
 http://localhost:8080/r/abc123
+```
 
 ### Future Enhancements
 - Persistent storage (e.g., using a database).
